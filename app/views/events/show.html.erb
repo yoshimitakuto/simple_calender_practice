@@ -1,0 +1,20 @@
+<h1>イベント詳細</h1>
+
+<table class="table table-inverse table-bordered">
+  <thead>
+    <tr>
+      <th>題名</th>
+      <th>内容</th>
+      <th>期間</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @event.title %></td>
+      <td><%= @event.content %></td>
+      <td><%= @event.start_time %> ~ <%= @event.end_time%></td>
+    </tr>
+  </tbody>
+</table>
+
+
