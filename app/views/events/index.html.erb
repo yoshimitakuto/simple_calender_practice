@@ -9,7 +9,7 @@
      <div class="col">
       <%= date.day %>
       <% events.each do |event| %>
-       <%= event.title %>
+       <%= link_to event.title, event_path(event) %>
       <% end %>
      </div>
     <% end %>
