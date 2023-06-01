@@ -1,0 +1,19 @@
+<div class="container">
+
+  <div class="row d-flex justify-content-center">
+    <%= link_to 'イベント追加', new_event_path, class: "col" %>
+  </div>
+
+  <div class="row d-flex justify-content-center">
+    <%= month_calendar events: @events do |date, events| %>
+     <div class="col">
+      <%= date.day %>
+      <% events.each do |event| %>
+       <%= event.title %>
+      <% end %>
+     </div>
+    <% end %>
+  </div>
+
+</div>
+
